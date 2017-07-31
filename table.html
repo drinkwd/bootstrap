@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap表格基本样式</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;background: #333">
+<!--
+表格样式：.table:表格全局样式(少量padding和水平方向的分割线)响应式布局
+隔行变色：.table-striped
+带边框的表格：.table-bordered;
+鼠标悬停效果：.table-hover
+紧凑的单元格：.table-condensed(单元格内补会减半)
+行或单元格背景色：.active .success .info .warning .dander(只能给tr或td加)
+响应式表格：将.table元素包裹在.table-responsive元素内，即可创建响应式表格(文字不会自动换行)
+ -->
+<div class="container" style="padding: 50px;background-color: #fff;">
+<div class="table-responsive">
+	<table class="table   table-condensed">
+		<tr>
+			<td class="active">编号</td>
+			<td class="success">姓名</td>
+			<td class="info">性别</td>
+			<td class="warning">年龄</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+	</div>
+</div>
+<script src='js/bootstrap.min.js'></script>
+<script src='js/jquery.min.js'></script>
+</body>
+</html>

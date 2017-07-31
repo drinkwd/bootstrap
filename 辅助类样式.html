@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap解决兼容性</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+		li{
+			padding-left: 5px;
+		}
+	</style>
+</head>
+</head>
+<body>
+	<!--
+		文本颜色类:.text-muted(柔和的) .text-primary .text-success .text-warning .text-danger
+		背景颜色类：.bg-primary .bg-success .bg-info .bg-warning .bg-danger
+		三角符号：<span class='caret'></span>
+		快速浮动类：.pull-left(左浮动) .pull-right(右浮动)
+		清除浮动:为父元素添加.clearfix可以清除浮动
+		让内容块网页居中：.center-block
+	-->
+<h2 class="page-header">浮动和清除应用</h2>
+<div style="width: 300px;border:1px solid red" class="clearfix bg-warning">
+<ul class="list-unstyled">
+	<li class="pull-left">
+		<a href="">
+			<img src="images/1.jpg" class="img-responsive img-thumbnail"  width="142" />
+		</a>
+		<p >这是我的图片</p>
+	</li>
+	<li class="pull-left">
+		<a href="">
+			<img src="images/1.jpg" class="img-responsive img-thumbnail" width="142"  />
+		</a>
+		<p>这是我的图片</p>
+	</li>
+	<li class="pull-left">
+		<a href="">
+			<img src="images/1.jpg" class="img-responsive img-thumbnail" width="142"  />
+		</a>
+		<p>这是我的图片</p>
+	</li>
+	<li class="pull-left">
+		<a href="">
+			<img src="images/1.jpg" class="img-responsive img-thumbnail" width="142"  />
+		</a>
+		<p>这是我的图片</p>
+	</li>
+</ul>
+</div>
+</body>
+</html>

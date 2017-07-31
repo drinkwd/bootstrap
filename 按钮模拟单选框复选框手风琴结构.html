@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>按钮模拟单选框和复选框</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;">
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="options1">男
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="options2">女
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="options3">未知
+    </label>
+</div>
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="checkbox" name="options" id="options1">男
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox" name="options" id="options2">女
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox" name="options" id="options3">未知
+    </label>
+</div>
+<!--按钮切换状态-->
+<div class="btn-group" data-toggle="button">
+    <button type="button"  class="btn btn-primary">确认</button>
+</div>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">标题一</a></h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">标题一对应的内容</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">标题二</a></h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">标题二对应的内容</div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><a data-toggle="collapse"data-parent="#accordion"href="#collapseThree">标题三</a></h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">标题三对应的内容</div>
+        </div>
+    </div>
+</div>
+ <script src='js/jquery-3.1.1.js'></script>
+ <script src='js/bootstrap.min.js'></script>
+</body>
+</htm>

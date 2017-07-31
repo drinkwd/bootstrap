@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap表单基本样式</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;background: #333">
+<div class="container" style="padding: 50px;background-color: #fff;">
+<form action="#" >
+	<div class="form-groupo">
+		<label for="username" >用户名:</label>
+		<input type="text" class="form-control" placeholder="请输入用户名" id='username' />
+	</div>
+	<div class="form-groupo">
+		<label for="passward" >密码:</label>
+		<input type="password" class="form-control" placeholder="请输入密码" id='passward'  />
+	</div>
+	<div class="form-groupo">
+		<label>上传：</label>
+		<input type="file" />
+		<!--.help-block 显示帮助字体颜色大小有变化-->
+		<p class="help-block">上传图片类型只能是.jpg</p>
+	</div>
+	<div class="form-groupo">
+		<label>兴趣爱好:</label>
+		<!--排版优美隔行显示复选框 复选框之间的间距大-->
+		<div class="checkbox">
+		<lable class='checkbox-inline'><input type="checkbox" />画画</lable>
+		<lable class='checkbox-inline'><input type="checkbox" />篮球</lable>
+		<lable class='checkbox-inline'><input type="checkbox" />滑冰</lable>
+		<lable class='checkbox-inline'><input type="checkbox" />游泳</lable>
+		</div>
+	</div>
+	<div class="form-groupo">
+		<label>种族:</label>
+		<!--排版优美隔行显示复选框 复选框之间的间距大-->
+		<div class="radio">
+		<lable class='radio-inline'><input type="radio" name='zu' />汉族</lable>
+		<lable class='radio-inline'><input type="radio" name='zu'/>藏族</lable>
+		<lable class='radio-inline'><input type="radio" name='zu'/>回族</lable>
+		<lable class='radio-inline'><input type="radio" name='zu'/>蒙古族</lable>
+		</div>
+	</div>
+	<div class="form-groupo">
+		<label for="info" >个人简介:</label>
+		<textarea rows=5 class="form-control" placeholder="请输入用户名" id='info'>
+		</textarea>
+	</div>
+</form>
+
+<script src='js/bootstrap.min.js'></script>
+<script src='js/jquery.min.js'></script>
+</div>
+</body>
+</html>

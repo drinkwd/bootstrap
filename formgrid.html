@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap表单的栅格布局</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;background: #333">
+<!--表格的栅格系统不加row应该加form-horizontal
+	按钮样式：可作为按钮的使用元素a,input button
+	.btn:按钮的全局样式
+	预定义样式:.btn-default .btn-success .btn-info .btn-warning .btn-dander .btn-link .btn-primary
+	.active按钮的激活状态 .disabled按钮禁用状态
+	按钮尺寸:.btn-lg(大按钮).btn-sm(小按钮).btn-xs(超小按钮)
+	.btn-block:将按钮拉伸到撑满整个父元素
+-->
+<div class="container" style="padding: 50px;background-color: #fff;">
+<form action="#" class="form-horizontal">
+	<div class="form-group">
+		<label class='col-md-2 control-label' for="username" >用户名:</label>
+	<div class="col-md-10">		
+		<input type="text" class="form-control" placeholder="请输入用户名" id='username' />
+		</div>
+	</div>
+	<div class="form-group" style="margin-top: 20px">
+		<label class='col-lg-2 control-label' for="passward" >密码:</label>
+	<div class="col-lg-10">
+		<input type="password" class="form-control" placeholder="请输入密码" id='passward'  />
+		</div>
+	</div>
+	<div class="form-group">
+		<label class='col-lg-2 control-label'>上传：</label>
+		<div class="col-lg-10">
+		<input type="file" />
+		<!--.help-block 显示帮助字体颜色大小有变化-->
+		<p class="help-block">上传图片类型只能是.jpg</p>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class='col-lg-2 control-label'>兴趣爱好:</label>
+		<!--排版优美隔行显示复选框 复选框之间的间距大-->
+		<div class="col-lg-10">
+			<lable class='checkbox-inline'><input type="checkbox" />画画</lable>
+			<lable class='checkbox-inline'><input type="checkbox" />篮球</lable>
+			<lable class='checkbox-inline'><input type="checkbox" />滑冰</lable>
+			<lable class='checkbox-inline'><input type="checkbox" />游泳</lable>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class='col-lg-2 control-label'>种族:</label>
+		<!--排版优美隔行显示复选框 复选框之间的间距大-->
+		<div class="col-lg-10">
+			<lable class='radio-inline'><input type="radio" name='zu' />汉族</lable>
+			<lable class='radio-inline'><input type="radio" name='zu'/>藏族</lable>
+			<lable class='radio-inline'><input type="radio" name='zu'/>回族</lable>
+			<lable class='radio-inline'><input type="radio" name='zu'/>蒙古族</lable>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class='col-lg-2 control-label' for="info" >个人简介:</label>
+		<div class="col-lg-10">
+		<textarea rows=5 class="form-control" placeholder="请输入用户名" id='info'>
+		</textarea>
+		</div>
+	</div>
+	<div class="col-lg-2 col-lg-offset-2">
+	<button class="btn   btn-success">提交</button>
+	</div>
+</form>
+
+<script src='js/bootstrap.min.js'></script>
+<script src='js/jquery.min.js'></script>
+</div>
+</body>
+</html>

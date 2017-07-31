@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap输入框组</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;">
+ <!--
+	.input-group:只能用于文本框<input>,不能用于<select>和<textarea>
+	.input-group-addon用于在<input>前后添加额外元素，赋给一个span元素即可
+	注意：将.input-group-addon和<input>元素包在.input-group之中
+	.input-group-lg和.input-group-sm可以改变输入框组的尺寸
+	.input-group-btn可以作为额外元素的按钮，应该是作为<button>的父元素
+ -->
+ <h2 class="page-header">输入框组</h2>
+ <div class="input-group input-group-sm">
+	<span class="input-group-addon">$</span>
+	<input type="text" class="form-control " placeholder="请输入内容" />
+	<span class="input-group-addon">@</span>
+ </div>
+ <script src='js/jquery-3.1.1.js'></script>
+ <script src='js/bootstrap.min.js'></script>
+</body>
+</html>

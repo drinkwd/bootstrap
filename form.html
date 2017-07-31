@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap表单基本样式</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;background: #333">
+<!--
+表单组样式：.form-group,将<label>和表单元素包含其中，可以获得更好的排列通常和.form-control配合使用
+表单元素样式：.form-control:常用于input select textarea
+内联表单样式：.form-inline(用于form元素可以使表单一行排列)
+用于隐藏元素：.sr-only(可以隐藏各种元素div 等等)
+-->
+<div class="container" style="padding: 50px;background-color: #fff;">
+<form action="#" >
+	<div class="form-groupo">
+		<label for="username" class="sr-only">用户名</label>
+		<input type="text" class="form-control" placeholder="请输入用户名" id='username' />
+	</div>
+	<div class="form-groupo">
+		<label for="passward" class="sr-only">密码</label>
+		<input type="password" class="form-control" placeholder="请输入密码" id='passward'  />
+	</div>
+</form>
+<form action="#" class="form-inline">
+	
+		<label for="username">用户名</label>
+		<input type="text" class="form-control" placeholder="请输入用户名" id='username' />
+		<label for="paddward">密码</label>
+		<input type="password" class="form-control" placeholder="请输入密码" id='paddward'  />
+	
+</form>
+<script src='js/bootstrap.min.js'></script>
+<script src='js/jquery.min.js'></script>
+</div>
+</body>
+</html>

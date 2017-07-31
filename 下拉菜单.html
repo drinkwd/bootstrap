@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--移动设备优先-->
+	<meta name='viewport' content="width=device-width,initial-scale=1">
+	<title>Bootstrap下拉菜单</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="padding: 50px;">
+<!--
+	.dropdown将下拉菜单触发器和下拉菜单包含在其中(下拉菜单父元素)
+	.data-toggle属性：下拉菜单触发器。取值为“dropdown”
+	.dropup:向上弹出的下拉菜单
+	.dropdown-menu:给ul指定下拉菜单的样式
+	下拉菜单对齐方式：.dropdown-menu-left和.dropdown-menu-left
+	.divider:为下拉菜单添加分割线，用于多个链接分组
+	.disabled:禁用的菜单项
+-->
+<h2 class="page-header">下拉菜单</h2>
+<div class="dropdown ">
+	<button type="button" class="btn btn-default" data-toggle="dropdown">
+	前端开发&nbsp;<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="">html</a></li>
+		<li><a href="">nodejs</a></li>
+		<li class="divider"></li>
+		<li><a href="">javascript</a></li>
+		<li><a href="">css</a></li>
+	</ul>
+ </div>
+ <h2 class="page-header">分裂式的下拉菜单</h2>
+<div class="btn-group ">
+	<button type="button" class="btn btn-info" >
+	前端开发&nbsp;
+	</button>
+	<!--dropdown-toggle按钮组圆角-->
+	<button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="">html</a></li>
+		<li><a href="">nodejs</a></li>
+		<li class="divider"></li>
+		<li><a href="">javascript</a></li>
+		<li><a href="">css</a></li>
+	</ul>
+ </div>
+ <script src='js/jquery-3.1.1.js'></script>
+ <script src='js/bootstrap.min.js'></script>
+</body>
+</html>
